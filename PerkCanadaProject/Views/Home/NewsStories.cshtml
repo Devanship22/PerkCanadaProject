@@ -5,18 +5,19 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/CSS/NewsCSS.css" />
 </head>
 <body>
-    <h1 style="text-align:center"> CBC News Feeds </h1>
+    <h1> CBC News Feeds </h1>
     <div>
         @foreach (var cbcNewsStory in Model)
         {
             <div class="row">
-                <div class="container-fluid" style="background-color:antiquewhite">
+                <div class="container-fluid" id="newsfeed">
 
                     <h6> @cbcNewsStory.PubDate </h6>
-                    
-                    <a href="@cbcNewsStory.Link" target="_blank" style="color:black">
+
+                    <a href="@cbcNewsStory.Link" target="_blank">
                         <h2>@cbcNewsStory.Title</h2>
 
                         <p>@Html.Raw(cbcNewsStory.Description)</p>
@@ -24,11 +25,11 @@
 
                     @if (@cbcNewsStory.AuthorName == "")
                     {
-                <p>By: Not Found <h10 style="float:right;">*Please click on image for more information</h10> </p>
+                        <p>By: Not Found <h10>*Please click on image for more information</h10> </p>
                     }
                     else
                     {
-                <p>By: @cbcNewsStory.AuthorName <h10 style="float:right;">*Please click on image for more information</h10> </p>
+                        <p>By: @cbcNewsStory.AuthorName <h10>*Please click on image for more information</h10> </p>
 
                     }
 

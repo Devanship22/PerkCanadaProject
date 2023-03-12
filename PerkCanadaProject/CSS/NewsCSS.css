@@ -1,0 +1,43 @@
+﻿
+#home h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#home p {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #666;
+    }
+
+h1 {
+    text-align: center;
+}
+
+#newsfeed {
+    background-color: antiquewhite;
+}
+
+#newsfeed a {
+        color: black;
+    }
+#newsfeed h10 {
+        float: right;
+    }
