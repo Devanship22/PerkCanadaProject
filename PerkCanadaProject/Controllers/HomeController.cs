@@ -29,7 +29,9 @@ namespace PerkCanadaProject.Controllers
                                {
                                    Title = item.Element("title").Value,
                                    Description = item.Element("description").Value,
-                                   AuthorName = item.Element("author").Value
+                                   AuthorName = item.Element("author").Value,
+                                   PubDate = item.Element("pubDate").Value,
+                                   Link = item.Element("link").Value
                                };
 
                 return View(newslist.ToList());

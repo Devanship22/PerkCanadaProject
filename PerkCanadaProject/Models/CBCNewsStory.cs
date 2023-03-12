@@ -11,7 +11,7 @@ namespace PerkCanadaProject.Models
         public string Description { get; set; }
         public string AuthorName { get; set; }
         public string PubDate { get; set; }
-
+        public string Link { get; set; }
 
     }
 }

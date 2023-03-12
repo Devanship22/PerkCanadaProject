@@ -13,17 +13,23 @@
         {
             <div class="row">
                 <div class="container-fluid" style="background-color:antiquewhite">
-                    <h6> @cbcNewsStory.PubDate</h6>
-                    <h2>@cbcNewsStory.Title</h2>
-                    <p>@cbcNewsStory.Description</p>
+
+                    <h6> @cbcNewsStory.PubDate </h6>
+                    
+                    <a href="@cbcNewsStory.Link" target="_blank" style="color:black">
+                        <h2>@cbcNewsStory.Title</h2>
+
+                        <p>@Html.Raw(cbcNewsStory.Description)</p>
+                    </a>
 
                     @if (@cbcNewsStory.AuthorName == "")
                     {
-                        <p>By: Not Found</p>
+                <p>By: Not Found <h10 style="float:right;">*Please click on image for more information</h10> </p>
                     }
                     else
                     {
-                        <p>By: @cbcNewsStory.AuthorName</p>
+                <p>By: @cbcNewsStory.AuthorName <h10 style="float:right;">*Please click on image for more information</h10> </p>
+
                     }
 
                 </div>
