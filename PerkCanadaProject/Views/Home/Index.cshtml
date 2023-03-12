@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+<html>
+<head>
+    <title>
+    </title>
+    <style>
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #666;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to CBC News Feeds</h1>
+
+        <p>Stay up-to-date with the latest news and current events from around the world.</p>
+
+        <button onclick="location.href='Home/NewsStories';">Get Started</button>
+    </div>
+</body>
+</html>
+

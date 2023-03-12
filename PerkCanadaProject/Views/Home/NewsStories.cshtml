@@ -1,0 +1,35 @@
+﻿@model List<PerkCanadaProject.Models.CBCNewsStory>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1 style="text-align:center"> CBC News Feeds </h1>
+    <div>
+        @foreach (var cbcNewsStory in Model)
+        {
+            <div class="row">
+                <div class="container-fluid" style="background-color:antiquewhite">
+                    <h6> @cbcNewsStory.PubDate</h6>
+                    <h2>@cbcNewsStory.Title</h2>
+                    <p>@cbcNewsStory.Description</p>
+
+                    @if (@cbcNewsStory.AuthorName == "")
+                    {
+                        <p>By: Not Found</p>
+                    }
+                    else
+                    {
+                        <p>By: @cbcNewsStory.AuthorName</p>
+                    }
+
+                </div>
+            </div>
+            <br />
+        }
+    </div>
+</body>
+</html>
